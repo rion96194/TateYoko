@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-31j" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文字列よこたて変換</title>
+<link rel="stylesheet" href="./tateyoko.css" />
+<script type="text/javascript" src="./tateyoko.js"></script>
+<script type="text/javascript" src="./henkan.js"></script>
+</head>
+<body oncontextmenu="return false;">
+  <font size="4">文字列よこたて変換　Ver:1.01くらい</font><br>
+  横文字を縦文字に変換します。<br>
+  <input type="text" class="form-control" id="wordfield" name="q" style="width:30%;" placeholder="言葉をここに入力">
+  <br>
+  <br>
+  縦の文字数：
+    <select name="tateselect" id="id_tateselect">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  <br>
+  <br>
+  <button type="button" class="btn btn-primary" id="tateyoko-button" onClick="tateyokomain();"> よこたて変換 </button>
+  <br>
+  <br>
+  ●記号対応だが、コピペすると横文字になってしまう版
+  <div id="editor" class="editor" style="border:#000000 solid 1px;" contenteditable="true">ここに結果が表示されます</div>
+  <!-- <form class="vertical-form">
+    <div class="field">
+      <textarea class="outarea" id="outarea" rows="20" cols="50" placeholder="ここに結果が表示されます"></textarea>
+    </div>
+  </form> -->
+  <br>
+  ●ある程度記号に対応し、コピペすると縦が保持される版<br>
+  <textarea class="outarea" id="outarea" rows="20" cols="50" placeholder="ここに結果が表示されます"></textarea>
+  <hr>
+  2017/10/10　コピペ対応版でもある程度記号に対応した。<br>
+  2017/10/06　とりあえず作成。
+
+</body>
+</html>
